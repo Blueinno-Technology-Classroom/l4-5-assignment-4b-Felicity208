@@ -1,6 +1,16 @@
 # ✅ Complete this function, replace `pass` with your solution:
 def count(numbers) -> dict:
-    pass
+    typesofnum = []
+    result = {}
+    for num in numbers:
+        if num not in typesofnum:
+            typesofnum.append(num)
+            result[num] = 1
+        else:
+            result[num] += 1
+
+    return result
+
 
 
 
